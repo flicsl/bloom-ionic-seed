@@ -1,5 +1,5 @@
 (function() {
-    angular.module('GR-APP-TITLE', ['ionic'])
+    angular.module('GR-APP-TITLE', ['templates','ionic'])
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
                 if (window.cordova && window.cordova.plugins.Keyboard) {

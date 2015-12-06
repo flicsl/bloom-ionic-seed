@@ -50,6 +50,10 @@ gulp.task('sass', function(done) {
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
+  gulp.watch(outline.src + '/**/*.js', ['script', 'templateCache']);
+  gulp.watch(outline.src + '/**/*.css', ['style']);
+  gulp.watch(outline.src + '/**/*.html', ['index', 'templateCache']);
+  gulp.watch(outline.src + '/lib/**/*.{js,css}', ['index', 'reload-browser']);
 });
 
 gulp.task('install', ['git-check'], function() {
