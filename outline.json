@@ -1,0 +1,6 @@
+{
+	"name": "bloom-ionic-seed",
+	"src": "src",
+	"dist": "www",
+	"test": "test"
+}
